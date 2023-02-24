@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .body{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    table, tr, td {
+      border: 4px double black;
+      text-align: center;
+ 
+    }
+    </style>
+    <script src="./calculate.js"></script>
+</head>
+<body style="background-image: url(./12.webp); background-size: cover;">
+    <div class="container" style="margin-top: 100px;">
+      <div class="row">
+        <div class="col">
+          <table border="1">
+            <caption class="font-bold text-2xl">Simpple Calculator</caption>
+            <tr>
+              <td class="px-1 py-1" colspan="3"> <input style="border:solid 2px blueviolet" class="border-solid rounded-lg bg-pink-200 px-4 py-4 text-2xl mx-4 my-4" id="res" type="text"> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-teal-400 px-5 py-5 text-2xl" onclick="AC()">AC</button> </td>
+            </tr>
+  
+            <tr>
+              <td class="px-2 py-2"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('1')">1</button> </td>
+              <td class="px-2 py-2"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('2')">2</button> </td>
+              <td class="px-2 py-2"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('3')">3</button> </td>
+              <td class="px-2 py-2"> <button class="rounded-lg bg-indigo-700 px-5 py-5 text-2xl" onclick="show('+')">+</button> </td>
+            </tr>
+  
+            <tr>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('4')">4</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('5')">5</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('6')">6</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-red-400 px-5 py-5 text-2xl" onclick="show('-')">-</button> </td>
+            </tr>
+  
+            <tr>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('7')">7</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('8')">8</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('9')">9</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-lime-600 px-5 py-5 text-2xl" onclick="show('*')">*</button> </td>
+            </tr>
+  
+            <tr>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('%')">%</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('0')">0</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-gray-400 px-5 py-5 text-2xl" onclick="show('.')">.</button> </td>
+              <td class="px-1 py-1"> <button class="rounded-lg bg-amber-500 px-5 py-5 text-2xl" onclick="cal()">=</button> </td>
+            </tr>
+  
+          </table>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
